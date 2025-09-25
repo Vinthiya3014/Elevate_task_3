@@ -1,0 +1,37 @@
+
+SELECT * 
+FROM complaint;
+SELECT complaint_id, student_id, description, status 
+FROM complaint;
+
+SELECT * 
+FROM complaint 
+WHERE status = 'Pending';
+
+SELECT * 
+FROM complaint 
+WHERE student_id = 2 AND status = 'Resolved';
+
+
+SELECT * 
+FROM complaint 
+WHERE status = 'Pending' OR status = 'In Progress';
+
+
+SELECT * 
+FROM complaint 
+WHERE description LIKE '%bathroom%';
+
+SELECT * 
+FROM complaint 
+WHERE complaint_id BETWEEN 1 AND 3;
+
+
+SELECT * 
+FROM complaint 
+ORDER BY complaint_id;
+
+
+SELECT * 
+FROM complaint 
+ORDER BY status DESC, complaint_id ASC;
